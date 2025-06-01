@@ -44,11 +44,19 @@ export default function Header() {
             <Mail />
           </Link>
 
-          <Link href="/" className="flex justify-center items-center w-8 h-8">
+          <Link
+            href="https://github.com/LuongQuyTan1999"
+            target="_blank"
+            className="flex justify-center items-center w-8 h-8"
+          >
             <Github />
           </Link>
 
-          <Link href="/" className="flex justify-center items-center w-8 h-8">
+          <Link
+            href="https://www.linkedin.com/in/luongquytan/"
+            target="_blank"
+            className="flex justify-center items-center w-8 h-8"
+          >
             <Linkedin />
           </Link>
         </div>

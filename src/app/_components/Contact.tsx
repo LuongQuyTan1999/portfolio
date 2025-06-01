@@ -27,12 +27,20 @@ export default function Contact() {
             tanquyluong@gmail.com
           </Link>
 
-          <Link href="/" className="flex items-center gap-2 space-y-4 p-4">
+          <Link
+            href="https://github.com/LuongQuyTan1999"
+            target="_blank"
+            className="flex items-center gap-2 space-y-4 p-4"
+          >
             <Github width={24} height={24} />
             Github
           </Link>
 
-          <Link href="/" className="flex items-center gap-2 space-y-4 p-4">
+          <Link
+            href="https://www.linkedin.com/in/luongquytan/"
+            target="_blank"
+            className="flex items-center gap-2 space-y-4 p-4"
+          >
             <Linkedin />
             LinkedIn
           </Link>
