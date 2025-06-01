@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { PROJECTS } from "@/constants";
 import Link from "next/link";
-import { PROJECTS } from "../projects/page";
 
 export default function Project() {
   return (
