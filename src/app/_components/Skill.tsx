@@ -1,5 +1,42 @@
 import Image from "next/image";
 
+const SKILLS_1 = [{ name: "Languages", skills: ["TypeScript", "JavaScript"] }];
+
+const SKILLS_2 = [
+  {
+    name: "Fronted",
+    skills: [
+      "React.js",
+      "Next.js",
+      "TailwindCSS",
+      "Shadcn UI",
+      "Tanstack Query",
+      "Zustand",
+    ],
+  },
+  { name: "Backend", skills: ["Node.js", "NestJS"] },
+];
+
+const SKILLS_3 = [
+  { name: "Database", skills: ["PostgreSQL", "Mikro-ORM", "TypeORM", "Mongo"] },
+  {
+    name: "Other",
+    skills: [
+      "HTML",
+      "CSS",
+      "REST",
+      "Feature-Sliced Design (FSD) Architectural",
+    ],
+  },
+];
+
+// const SKILLS_2 = [
+//   { name: "Tools", skills: ["Git", "Docker", "CI/CD"] },
+//   { name: "Testing", skills: ["Jest", "Cypress"] },
+//   { name: "Cloud", skills: ["AWS", "Vercel"] },
+//   { name: "Soft Skills", skills: ["Teamwork", "Problem Solving", "Communication"] },
+// ]
+
 export default function Skill() {
   return (
     <div className="my-10 container">
@@ -22,70 +59,59 @@ export default function Skill() {
         </div>
 
         <div className="gap-4 grid grid-cols-3 w-full">
-          <div className="border border-secondary w-full h-fit">
-            <div className="p-2 border-secondary border-b font-semibold">
-              Languages
-            </div>
+          {SKILLS_1.map((skill) => (
+            <div
+              key={skill.name}
+              className="border border-secondary w-full h-fit"
+            >
+              <div className="p-2 border-secondary border-b font-semibold">
+                {skill.name}
+              </div>
 
-            <div className="flex flex-wrap gap-2 p-2 text-secondary">
-              <span>TypeScript</span>
-              <span>JavaScript</span>
+              <div className="flex flex-wrap gap-2 p-2 text-secondary">
+                {skill.skills.map((s) => (
+                  <span key={s}>{s}</span>
+                ))}
+              </div>
             </div>
+          ))}
+
+          <div className="space-y-4">
+            {SKILLS_2.map((skill) => (
+              <div
+                key={skill.name}
+                className="border border-secondary w-full h-fit"
+              >
+                <div className="p-2 border-secondary border-b font-semibold">
+                  {skill.name}
+                </div>
+
+                <div className="flex flex-wrap gap-2 p-2 text-secondary">
+                  {skill.skills.map((s) => (
+                    <span key={s}>{s}</span>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
 
           <div className="space-y-4">
-            <div className="border border-secondary w-full h-fit">
-              <div className="p-2 border-secondary border-b font-semibold">
-                Database
-              </div>
+            {SKILLS_3.map((skill) => (
+              <div
+                key={skill.name}
+                className="border border-secondary w-full h-fit"
+              >
+                <div className="p-2 border-secondary border-b font-semibold">
+                  {skill.name}
+                </div>
 
-              <div className="flex flex-wrap gap-2 p-2 text-secondary">
-                <span>PostgreSQL</span>
-                <span>MySQL</span>
-                <span>Mongo</span>
+                <div className="flex flex-wrap gap-2 p-2 text-secondary">
+                  {skill.skills.map((s) => (
+                    <span key={s}>{s}</span>
+                  ))}
+                </div>
               </div>
-            </div>
-
-            <div className="border border-secondary w-full h-fit">
-              <div className="p-2 border-secondary border-b font-semibold">
-                Frameworks
-              </div>
-
-              <div className="flex flex-wrap gap-2 p-2 text-secondary">
-                <span>ReactJS</span>
-                <span>NextJS</span>
-                <span>NestJS</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            <div className="border border-secondary w-full h-fit">
-              <div className="p-2 border-secondary border-b font-semibold">
-                Tools
-              </div>
-
-              <div className="flex flex-wrap gap-2 p-2 text-secondary">
-                <span>VSCode</span>
-                <span>Figma</span>
-                <span>Git</span>
-                <span>Jira</span>
-              </div>
-            </div>
-
-            <div className="border border-secondary w-full h-fit">
-              <div className="p-2 border-secondary border-b font-semibold">
-                Other
-              </div>
-
-              <div className="flex flex-wrap gap-2 p-2 text-secondary">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Tailwindcss</span>
-                <span>Shadcn-ui</span>
-                <span>REST</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

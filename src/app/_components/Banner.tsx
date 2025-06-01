@@ -8,7 +8,7 @@ export default function Banner() {
       <div className="flex justify-between items-center gap-8 w-full min-h-[550px]">
         <div>
           <h1 className="mb-4 font-bold text-primary text-3xl">
-            Full-Stack Developer
+            Hi, I’m Jackson - Full-Stack Developer
           </h1>
           <p className="mb-6 text-secondary">
             I’m a full-stack developer with 4 years of experience building
@@ -20,7 +20,14 @@ export default function Banner() {
             Let’s build something amazing together!
           </p>
 
-          <Button variant="outline">Contact me!!</Button>
+          <div className="flex gap-4">
+            <Button asChild>
+              <Link href="#contact">Hire Me</Link>
+            </Button>
+            <Button variant="outline" asChild>
+              <Link href="#project">View Projects</Link>
+            </Button>
+          </div>
         </div>
 
         <div className="flex flex-col items-center size-full">

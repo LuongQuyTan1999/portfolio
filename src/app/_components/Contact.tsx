@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 
 export default function Contact() {
@@ -14,17 +14,27 @@ export default function Contact() {
 
       <div className="flex justify-between gap-5 w-full">
         <div className="max-w-[505px] font-medium text-secondary">
-          I’m interested in freelance opportunities. However, if you have other
-          request or question, don’t hesitate to contact me
+          Looking for a reliable developer for your next project? Let’s
+          collaborate to build something amazing!
         </div>
 
-        <div className="space-y-4 p-4 border border-secondary w-fit h-fit">
+        <div className="border border-secondary w-fit h-fit text-secondary">
           <Link
             href="mailto:tanquyluong@gmail.com"
-            className="flex items-center gap-2 text-secondary"
+            className="flex items-center gap-2 space-y-4 p-4"
           >
             <Mail />
             tanquyluong@gmail.com
+          </Link>
+
+          <Link href="/" className="flex items-center gap-2 space-y-4 p-4">
+            <Github width={24} height={24} />
+            Github
+          </Link>
+
+          <Link href="/" className="flex items-center gap-2 space-y-4 p-4">
+            <Linkedin />
+            LinkedIn
           </Link>
         </div>
       </div>

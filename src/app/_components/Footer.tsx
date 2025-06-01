@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="flex justify-center items-center mt-20 py-8 border-secondary border-t w-full">
       <div className="container">
-        <div className="flex justify-between items-center">
+        {/* <div className="flex justify-between items-center">
           <div>
             <div className="font-medium text-2xl">Jackson</div>
             <div className="text-secondary">
@@ -25,8 +25,8 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-        </div>
-        <div className="mt-10 w-full text-secondary text-center">
+        </div> */}
+        <div className="w-full text-secondary text-center">
           © Copyright 2025. Made by Jackson
         </div>
       </div>
