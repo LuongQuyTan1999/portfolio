@@ -71,19 +71,19 @@ export default function Skill() {
                 <span>Git</span>
                 <span>Jira</span>
               </div>
+            </div>
 
-              <div className="border border-secondary w-full h-fit">
-                <div className="p-2 border-secondary border-b font-semibold">
-                  Other
-                </div>
+            <div className="border border-secondary w-full h-fit">
+              <div className="p-2 border-secondary border-b font-semibold">
+                Other
+              </div>
 
-                <div className="flex flex-wrap gap-2 p-2 text-secondary">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>Tailwindcss</span>
-                  <span>Shadcn-ui</span>
-                  <span>REST</span>
-                </div>
+              <div className="flex flex-wrap gap-2 p-2 text-secondary">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Tailwindcss</span>
+                <span>Shadcn-ui</span>
+                <span>REST</span>
               </div>
             </div>
           </div>
