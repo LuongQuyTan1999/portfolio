@@ -39,7 +39,7 @@ export default function Project() {
                   className="border-secondary hover:border-primary hover:text-primary"
                   asChild
                 >
-                  <Link href={item.link}>View project</Link>
+                  <Link href={item.link} target="_blank">View project</Link>
                 </Button>
               </div>
             </div>
