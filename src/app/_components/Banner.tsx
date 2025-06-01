@@ -57,7 +57,7 @@ export default function Banner() {
 
       <div className="flex flex-col justify-center items-center w-fit font-medium text-2xl">
         <div className="relative p-8 border border-secondary w-fit">
-          With great power comes great electricity bill
+          Great Tech, Minimal Bills – Let’s Create!
           <div className="-top-3 left-4 absolute">
             <Image src="/quote.svg" alt="Quote Icon" width={41} height={28} />
           </div>
