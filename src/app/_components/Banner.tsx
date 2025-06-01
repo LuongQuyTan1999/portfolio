@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Banner() {
   return (
-    <div className="flex flex-col items-center mt-[72px] mb-10 container">
+    <div className="flex flex-col items-center mb-10 w-full">
       <div className="flex justify-between items-center gap-8 w-full min-h-[550px]">
         <div>
           <h1 className="mb-4 font-bold text-primary text-3xl">
@@ -25,7 +25,7 @@ export default function Banner() {
               <Link href="#contact">Hire Me</Link>
             </Button>
             <Button variant="outline" asChild>
-              <Link href="#project">View Projects</Link>
+              <Link href="#projects">View Projects</Link>
             </Button>
           </div>
         </div>

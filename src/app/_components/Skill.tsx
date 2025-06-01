@@ -39,7 +39,7 @@ const SKILLS_3 = [
 
 export default function Skill() {
   return (
-    <div className="my-10 container">
+    <div className="my-10 w-full">
       <div className="flex justify-between items-center mb-12">
         <h1 className="flex items-center gap-2 font-medium text-3xl">
           <span className="text-primary">#</span>

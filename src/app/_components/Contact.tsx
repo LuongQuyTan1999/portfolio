@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <div className="my-10 container">
+    <div className="my-10 w-full" id="contact">
       <div className="flex justify-between items-center mb-12">
         <h1 className="flex items-center gap-2 font-medium text-3xl">
           <span className="text-primary">#</span>
