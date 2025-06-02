@@ -3,6 +3,7 @@ import { Fira_Code, Geist, Geist_Mono } from "next/font/google";
 import Footer from "./_components/Footer";
 import Header from "./_components/Header";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,9 +39,12 @@ export default function RootLayout({
       >
         <div className="flex flex-col items-center w-full">
           <Header />
-          <div className="flex flex-col mt-[72px] size-full container">{children}</div>
+          <div className="flex flex-col mt-[72px] size-full container">
+            {children}
+          </div>
           <Footer />
         </div>
+        <Analytics />
       </body>
     </html>
   );
